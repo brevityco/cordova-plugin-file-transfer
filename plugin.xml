@@ -108,6 +108,19 @@
         <framework src="AssetsLibrary.framework" />
     </platform>
 
+    <!-- osx -->
+    <platform name="osx">
+        <config-file target="config.xml" parent="/*">
+            <feature name="FileTransfer">
+                <param name="osx-package" value="CDVFileTransfer" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVFileTransfer.h" />
+        <source-file src="src/ios/CDVFileTransfer.m" />
+
+        <framework src="AssetsLibrary.framework" />
+    </platform>
+
     <!-- wp7 -->
     <platform name="wp7">
         <config-file target="config.xml" parent="/*">
