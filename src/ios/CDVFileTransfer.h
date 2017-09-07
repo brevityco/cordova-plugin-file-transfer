@@ -67,7 +67,9 @@ extern NSString* const kOptionsKeyCookie;
 
 @property (strong) NSMutableData* responseData; // atomic
 @property (nonatomic, strong) NSDictionary* responseHeaders;
-// @property (nonatomic, assign) UIBackgroundTaskIdentifier backgroundTaskID;
+#if TARGET_OS_IOS
+  @property (nonatomic, assign) UIBackgroundTaskIdentifier backgroundTaskID;
+#endif
 @property (nonatomic, strong) CDVFileTransfer* command;
 @property (nonatomic, assign) CDVFileTransferDirection direction;
 @property (nonatomic, strong) NSURLConnection* connection;
