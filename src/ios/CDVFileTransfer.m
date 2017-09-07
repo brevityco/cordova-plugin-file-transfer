@@ -21,9 +21,6 @@
 #import "CDVFileTransfer.h"
 #import "CDVLocalFilesystem.h"
 
-// #import <AssetsLibrary/ALAsset.h>
-// #import <AssetsLibrary/ALAssetRepresentation.h>
-// #import <AssetsLibrary/ALAssetsLibrary.h>
 #import <CFNetwork/CFNetwork.h>
 
 #ifndef DLog
